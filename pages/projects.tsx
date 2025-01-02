@@ -28,8 +28,3 @@ export async function getStaticProps() {
 }
 
 export default ProjectsPage;
-
-# touched on 2025-06-13T17:42:49.917492Z
-# touched on 2025-06-13T17:42:59.432818Z
-# touched on 2025-06-13T17:43:31.363655Z
-# touched on 2025-06-13T17:44:13.006198Z

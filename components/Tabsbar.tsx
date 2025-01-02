@@ -19,8 +19,3 @@ const Tabsbar = () => {
 };
 
 export default Tabsbar;
-
-# touched on 2025-06-13T17:42:09.704317Z
-# touched on 2025-06-13T17:43:07.721884Z
-# touched on 2025-06-13T17:43:28.547087Z
-# touched on 2025-06-13T17:43:45.144987Z
