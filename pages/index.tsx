@@ -134,5 +134,3 @@ export async function getStaticProps() {
     props: { title: "Home" },
   };
 }
-
-# touched on 2025-06-13T17:42:49.918338Z
