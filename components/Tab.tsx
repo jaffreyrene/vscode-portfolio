@@ -1,0 +1,37 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+
+import styles from '@/styles/Tab.module.css';
+
+interface TabProps {
+  icon: string;
+  filename: string;
+  path: string;
+}
+
+const Tab = ({ icon, filename, path }: TabProps) => {
+  const router = useRouter();
+
+  return (
+    <Link href={path}>
+      <div
+        className={`${styles.tab} ${router.pathname === path && styles.active}`}
+      >
+        <Image src={icon} alt={filename} height={18} width={18} />
+        <p>{filename}</p>
+      </div>
+    </Link>
+  );
+};
+
+export default Tab;
+
+# touched on 2025-06-13T17:42:15.764835Z
+# touched on 2025-06-13T17:42:42.093937Z
+# touched on 2025-06-13T17:42:59.433131Z
+# touched on 2025-06-13T17:43:22.015027Z
+# touched on 2025-06-13T17:43:25.024200Z
+# touched on 2025-06-13T17:43:33.982042Z
+# touched on 2025-06-13T17:44:10.251561Z
+# touched on 2025-06-13T17:44:18.915548Z

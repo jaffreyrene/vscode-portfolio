@@ -1,0 +1,81 @@
+import {
+  VscEye,
+  VscRepoForked,
+  VscStarEmpty,
+  VscGithubAlt,
+  VscLinkExternal,
+  VscTypeHierarchy,
+} from 'react-icons/vsc';
+
+import { Repo } from '@/types';
+
+import styles from '@/styles/RepoCard.module.css';
+
+interface RepoCardProps {
+  repo: Repo;
+}
+
+const RepoCard = ({ repo }: RepoCardProps) => {
+  return (
+    <div className={styles.card}>
+      <div className={styles.cardHeader}>
+        <h3 className={styles.title}>{repo.name}</h3>
+        {repo.language && (
+          <div className={styles.language}>
+            <VscTypeHierarchy className={styles.languageIcon} />
+            <span>{repo.language}</span>
+          </div>
+        )}
+      </div>
+      <p>{repo.description || 'No description provided'}</p>
+      <div className={styles.stats}>
+        <div>
+          <div>
+            <VscStarEmpty className={styles.icon} />
+            {repo.stargazers_count}
+          </div>
+          <div>
+            <VscRepoForked className={styles.icon} />
+            {repo.forks}
+          </div>
+          <div>
+            <VscEye className={styles.icon} />
+            {repo.watchers}
+          </div>
+        </div>
+        <div>
+          <a
+            href={repo.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View Repository"
+          >
+            <VscGithubAlt className={styles.icon} />
+          </a>
+          {repo.homepage && (
+            <a
+              href={repo.homepage}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Visit Live Site"
+            >
+              <VscLinkExternal className={styles.icon} />
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default RepoCard;
+
+# touched on 2025-06-13T17:42:24.662460Z
+# touched on 2025-06-13T17:42:53.409922Z
+# touched on 2025-06-13T17:42:56.520133Z
+# touched on 2025-06-13T17:43:16.399291Z
+# touched on 2025-06-13T17:43:36.838157Z
+# touched on 2025-06-13T17:43:42.265851Z
+# touched on 2025-06-13T17:43:50.532008Z
+# touched on 2025-06-13T17:44:10.250281Z
+# touched on 2025-06-13T17:44:18.915227Z

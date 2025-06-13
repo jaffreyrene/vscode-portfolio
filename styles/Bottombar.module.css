@@ -1,0 +1,60 @@
+.bottomBar {
+  background: var(--bottombar-bg);
+  height: 25px;
+  border-top: 1px solid var(--bottombar-border);
+  color: rgb(225, 228, 232);
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.bottomBar a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+  margin-right: 4px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  margin-right: 0.5rem;
+  height: 24px;
+  align-items: center;
+  padding: 0 0.2rem;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section:hover {
+  background: var(--bottombar-hover-bg);
+}
+
+@media screen and (max-width: 600px) {
+  .bottomBar {
+    font-size: 0.6rem;
+  }
+  .section {
+    margin-right: 0.5rem;
+  }
+}
+
+# touched on 2025-06-13T17:42:18.663829Z
+# touched on 2025-06-13T17:42:30.568647Z
+# touched on 2025-06-13T17:42:33.586857Z
+# touched on 2025-06-13T17:42:44.806618Z
+# touched on 2025-06-13T17:43:04.854080Z
+# touched on 2025-06-13T17:43:19.360127Z
+# touched on 2025-06-13T17:43:45.145266Z
+# touched on 2025-06-13T17:43:47.972481Z
+# touched on 2025-06-13T17:43:58.521487Z
+# touched on 2025-06-13T17:44:10.252709Z
+# touched on 2025-06-13T17:44:21.876039Z

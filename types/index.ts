@@ -1,0 +1,36 @@
+export interface Project {
+  title: string;
+  description: string;
+  logo: string;
+  link: string;
+  slug: string;
+}
+
+export interface Repo {
+  id: number;
+  name: string;
+  description: string;
+  language: string;
+  watchers: number;
+  forks: number;
+  stargazers_count: number;
+  html_url: string;
+  homepage: string;
+}
+
+export interface User {
+  login: string;
+  avatar_url: string;
+  public_repos: number;
+  followers: number;
+}
+
+# touched on 2025-06-13T17:42:09.705733Z
+# touched on 2025-06-13T17:42:30.568848Z
+# touched on 2025-06-13T17:43:13.385538Z
+# touched on 2025-06-13T17:43:28.545547Z
+# touched on 2025-06-13T17:43:33.982501Z
+# touched on 2025-06-13T17:43:42.265705Z
+# touched on 2025-06-13T17:44:15.822548Z
+# touched on 2025-06-13T17:44:21.875894Z
+# touched on 2025-06-13T17:44:24.678526Z
